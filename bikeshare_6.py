@@ -25,29 +25,29 @@ def get_filters():
     print('Hello! Let\'s explore some US bikeshare data!')
     
 
-    city=input("\n What city would you like to assess?  (Chicago, New York City, Washington) \n").title()
+    city=input("\n What city would you like to discuss?  (Chicago, New York City, Washington) \n").title()
     print(city)
     
     while city not in cities:
-        city=input("\n Please enter a useable city name. Chicago, New York City, Washington\n").title()   
+        city=input("\n Please enter an actual city's name. Choose from Chicago, New York City, Washington\n").title()   
         print('nope')
     else: 
-        month=input("\n Which month would you like to assess?  (January, February, March, April, May, June) Type 'None' for no month filter\n").title()
+        month=input("\n Which month would you like to discuss?  (January, February, March, April, May, June) Type 'None' for no month filter\n").title()
         print(month)
         
     while month not in months:
-        month=input("\n Please enter a useable month.  January, February, March, April, May, June, or None \n").title()
+        month=input("\n Please enter an actual month.  Choose from January, February, March, April, May, June, or None \n").title()
         print('nope')
     else: 
-        day =input("\n What day would you like to assess? (Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday)? Type 'None' if you would not like to assess by day \n").title()
+        day =input("\n What day would you like to discuss? (Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday)? Type 'None' if you would not like to assess by day \n").title()
         print(day)
             
             
     while day not in days:
-        day = input("\n Please enter a useable day. Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, or None \n").title()
+        day = input("\n Please enter an actual day. Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, or None \n").title()
         print('nope')
     else: 
-        print('Thank You.  We will proceed')    
+        print('Thank You.  Now we can proceed')    
 
         print('-'*40)
         return city, month, day
